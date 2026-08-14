@@ -1,0 +1,242 @@
+*margin{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #0f172a;
+    color: #fff;
+}
+
+header{
+    background-color: #020617;
+    padding: 20px 40px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+nav ul a{
+    transition: color 0.3s ease ;
+}
+navul a:hover{
+    color: #38bdf8;
+}
+#inicio{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+#inicio h1{
+    font-size: 56px;
+    margin-bottom: 10px;
+}
+#inicio p{
+    font-size: 20px;
+    color: #94a3b8;
+}
+#inico a{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #38bdf8;
+    color: #020617;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+#inicio a:hover{
+    background-color: #0ea5e9;
+    transform: translateY(-3px);
+}
+#sobre{
+    padding: 80px 40px;
+    text-align: center;
+    background-color: #111827;
+}
+#sobre h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+#sobre p{
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #94a3b8;
+}
+#habilidades{
+    padding: 80px 40px;
+}
+#habilidades h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    gap: 25px;
+    width: 100%;
+    max-width: 1000px;
+    margin-left: 20%;
+}
+.card{
+    flex: 1;
+    padding: 30px;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.card h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.card p{
+    color: #94a3b8;
+    line-height: 1.6;
+}
+.card{
+    flex: 1;
+    padding: 30px;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px ;
+    transition: trasnform 0.3s ease;
+}
+.card:hover{
+    transform: translateY(-8px);
+}
+@media(max-width:700px){
+    .cards{
+        flex-direction: column;
+    }
+}
+footer{
+    padding: 30px 40px ;
+    align-items: center;
+    background-color: #020617;
+    border-top: 1px solid #334155;
+}
+footer p{
+    color: #64748b;
+    font-size: 14px;
+}
+
+body.light{
+    background-color: #f8fafc;
+    color: #0f172a;
+}
+body.light header {
+    background-color: #e2e8f0;
+}
+
+body.light #sobre {
+    background-color: #f1f5f9;
+}
+
+body.light .card {
+    background-color: white;
+    border-color: #cbd5e1;
+}
+
+body.light footer {
+    background-color: #e2e8f0;
+}
+body.light nav a {
+    color: #0f172a;
+}
+
+body.light #inicio p,
+body.light #sobre p,
+body.light .card p {
+    color: #475569;
+}
+#themeButton {
+    padding: 8px 16px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #38bdf8;
+    color: #020617;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+#greentig{
+    color: #38bdf8;
+    font-size: 18px;
+    font-weight: bolder;
+}
+/* FORM */
+#contato{
+    padding: 80px 40px;
+    background-color: #111827;
+}
+#contato h2{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+#contactForm{
+    width: 100%;
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    background-color: #1e293b;
+    color: #fff;
+    font-size: 16px;
+}
+#contactForm textarea{
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #38bdf8;
+    color: #020617;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+#contactForm button:hover {
+    transform: translateY(-3px);
+}
+#contactForm small {
+    min-height: 20px;
+
+    color: #f87171;
+
+    font-size: 14px;
+}

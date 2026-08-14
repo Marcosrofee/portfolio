@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+ <html lang="pt-BR">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Meu Portfólio</title>
+         <link rel="stylesheet" href="style.css">
+     </head>
+     <body>
+         <header>
+             <nav> 
+                 <a href="#">Meu Logo</a>
+                 <ul>
+                     <li><a href="#">Início</a></li>
+                     <li><a href="#">Sobre</a></li>
+                     <li><a href="#">Habilidades</a></li>
+                 </ul>  
+                 <button id="themeButton">Modo claro</button>
+             </nav>
+         </header>
+         <main>
+             <section id="inicio">
+                 <p id="greeting"></p> 
+                 <h1>Olá eu sou Marcos</h1>
+                     <p> Desenvolvedor Full Stack em Formação.</p>
+                     <a href="#sobre">Conheça meu trabalho</a>
+             </section>
+             <section id="sobre">
+                    <h2>Sobre mim</h2>
+                    <p>Sou um desenvolvedor Full Stack em formação, com experiência em HTML, CSS, JavaScript e React. Tenho paixão por criar soluções inovadoras e eficientes para problemas complexos. Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades.</p>
+             </section>
+             <section id="habilidades">
+                 <h2>Habilidades</h2>
+                 <div class="cards">
+                     <div class="card">
+                         <h3>HTML</h3>
+                         <p>Estrutura das páginas </p>
+                     </div>
+                     <div class="card">
+                         <h3>CSS</h3>
+                         <p>Estilização e responsividade.</p>
+                     </div>
+                     <div class="card">
+                         <h3>JavaScript</h3>
+                         <p>Interatividade e lógica.</p> 
+                     </div>
+                 </div>
+             </section>
+         </main>
+         <form  id="contactForm">
+             <label for="name">Nome</label>
+             <input type="text"
+                 id="name"
+                     placeholder="Digite seu nome">
+                 <small id="nameError"></small>        
+             <label for="email">E-mail</label>
+             <input type="text"
+                 id="email"
+                     placeholder="Digite seu e-mail">
+                 <small id="emailError"></small>    
+             <label for="message">Mensagem</label>
+              <textarea id="message"
+                 placeholder="Digite sua mensagem">
+              </textarea>   
+              <small id="messageError"></small>
+              <button type="submit">
+                Enviar mensagem
+              </button>        
+              <p id="formMessage"></p>      
+         </form>
+         <footer>
+             <p>© 2026 - Meu Portfólio</p>
+         </footer>
+     <script src="javaScript.js"></script>
+     </body>
+ </html>
